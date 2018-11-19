@@ -33,7 +33,7 @@ The `<sky-accordion>` component registers globally and can now be used.
 
 Basic example:
 ``` html
-<ul class="skyAccordions">
+<ul class="sky-accordions">
 	<sky-accordion>
 		<span slot="title">Accordion 1</span>
 		<p>This is our accordion</p>
@@ -62,12 +62,12 @@ Make sure to define collapsed content preview size by setting `min-height` in cs
 ##### Example
 ```css
 // auto is for no preview - insert pixel or vh/vw value in order to preview some content.
-.skyAccordion .skyReveal-content {
+.sky-accordion .sky-reveal {
     min-height: auto;
 }
 
 // Adjust preview gradient
-.skyAccordion .skyReveal-content:after {
+.sky-accordion .sky-reveal:after {
     /* Other desired styling changes */
     background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
